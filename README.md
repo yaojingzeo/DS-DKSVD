@@ -1,5 +1,5 @@
-# DPRF
-The code of "DS-DKSVD: Leveraging Dynamic-Static Dictionary  Learning for Deep K-SVD" from _The Visual Computer_.
+# DS-DKSVD
+The code of **"DS-DKSVD: Leveraging Dynamic-Static Dictionary  Learning for Deep K-SVD"** from _The Visual Computer_.
 
 ## The Overall Architecture of DS-DKSVD
 ![image](./Images/Figure_2.png)
@@ -48,7 +48,7 @@ In this study, we utilize the following publicly available datasets for non-blin
 - **Br35H (Brain Tumor Detection Dataset)**  
   [Kaggle Dataset](https://www.kaggle.com/ahmedhamada0/brain-tumor-detection)
 
-👉 *BSD, Set12, and Urban100 are used for image denoising tasks, while FMD and Br35H are used for image classification.*
+👉 *BSD, Set12, Urban100, and FMD are used for image denoising tasks, while  Br35H are used for image classification.*
 
 ## Dataset Preparation
 After downloading, organize the datasets as follows:
@@ -72,26 +72,29 @@ Dataset structure:
 ```
 Make sure the data is correctly organized before proceeding to training or evaluation.
 
-## Training
+## Training and Test
 ### Non-blind denoising
 To train the non-blind denoising model, run: 
    ```bash  
    python Denoising/non_blind/train_non.py
    ```
+### blind denoising
+To train the blind denoising model, run: 
+   ```bash  
+   python Denoising/blind/train_synthetic or train_real.py
+   ```
+### denoising test
+To test model, run: 
+   ```bash  
+   python Denoising/load_model_psnr_ssim_ours.py
+   ```
+### Classification
+To train the classification model, run: 
+   ```bash  
+   python Classification/train_class.py
+   ```
 
-## Evaluation
-You can evaluate the performance of the trained models using the following scripts:
-* Evaluate Registration Network:[metrics_reg.py](Evaluator/metrics_reg.py)
-* Evaluate Fusion Network:[metrics_fus.py](Evaluator/metrics_fus.py) 
 
-## Registration Results
-![image](./Imgs/visual-reg-00202-noGrid.jpg)
-![image](./Imgs/visual-reg-00718N-noGrid.jpg)
-![image](./Imgs/visual-reg-FLIR_08954-noGrid.jpg)
-
-## Fusion Results
-![image](./Imgs/visual-fus-FMB_00089.jpg)
-![image](./Imgs/visual-fus-M3FD_00738.jpg)
 
 ## Citation
 If you find this work useful in your research, please consider citing our paper:
