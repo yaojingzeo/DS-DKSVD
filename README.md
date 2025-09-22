@@ -1,17 +1,14 @@
 # DPRF
-The code of "标题" from _The Visual Computer_.
+The code of "DS-DKSVD: Leveraging Dynamic-Static Dictionary  Learning for Deep K-SVD" from _The Visual Computer_.
 
-## Overall framework
+## The Overall Architecture of DS-DKSVD
 ![image](./Images/Figure_2.png)
-The workflow of the proposed **Dual-Pyramid Infrared-Visible Image Registration and Fusion Framework (DPRF)**. This framework is designed for robust cross-modal image registration and multi-scale image fusion.
+The workflow of the proposed **DS-DKSVD: Leveraging Dynamic-Static Dictionary Learning for Deep K-SVD**. Left: the overall architecture of DS-DKSVD. Right: the architecture of one stage in DS-DKSVD.
 
-## Registration Network
+## The subnetwork details of the proposed DS-DKSVD
 ![image](./Images/Figure_3.png)
-The architecture of the proposed **Gaussian-Dictionary Dual Encoding Residual Flow Registration (GDFR)** Network. For clarity, only a 3-level pyramid structure is shown here. The network utilizes Gaussian-Dictionary dual domain learning-based feature extraction and residual flow estimation for accurate infrared-visible image registration.
+The subnetwork details of the proposed DS-DKSVD
 
-## Fusion Network
-![image](./Imgs/fus.jpg)
-The architecture of the proposed **Laplacian Pyramid and Dictionary Learning-based Multi-scale Feature Fusion Network (LPDF-Net)**. This fusion network leverages multi-scale features to generate high-quality fused images.
 
 ## Recommended Environment  
 We recommend the following environment for running the code:  
@@ -32,13 +29,20 @@ Follow the steps below to set up the environment and run the code:
    ```bash  
    pip install -r requirements.txt  
    
-## Datasets
-In this study, we employ the following publicly available datasets to conduct both non-blind and blind image denoising, as well as image classification：
-* BSD
-* Set12 
-* Urban100 
-* FMD
+## denoising Datasets
+In this study, we utilize the following publicly available datasets for non-blind and blind image denoising, as well as image classification:
 
+- **BSD (Berkeley Segmentation Dataset)**  
+  [Official Website](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/) | [Kaggle Mirror (BSDS500)](https://www.kaggle.com/datasets/balraj98/berkeley-segmentation-dataset-500-bsds500)
+
+- **Set12**  
+  [Download Link (HyperAI)](https://hyper.ai/en/datasets/17513)
+
+- **Urban100**  
+  [Kaggle Dataset](https://www.kaggle.com/datasets/harshraone/urban100)
+
+- **FMD (Flickr Material Database)**  
+  [Download Link](https://sourl.cn/Wyqrui)
 ## Dataset Preparation
 After downloading, organize the datasets as follows:
 Dataset structure:  
