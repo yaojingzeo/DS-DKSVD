@@ -1,14 +1,11 @@
 # DS-DKSVD
 The code of **"DS-DKSVD: Leveraging Dynamic-Static Dictionary  Learning for Deep K-SVD"** from _The Visual Computer_.
 
-## The Overall Architecture of DS-DKSVD
-![image](./Images/Figure_2.png)
-The workflow of the proposed **DS-DKSVD: Leveraging Dynamic-Static Dictionary Learning for Deep K-SVD**. Left: the overall architecture of DS-DKSVD. Right: the architecture of one stage in DS-DKSVD.
+![image](./Images/Figure_2.png)  
+*Figure 2. The overall architecture of DS-DKSVD.*
 
-## The subnetwork details of the proposed DS-DKSVD
-![image](./Images/Figure_3.png)
-The subnetwork details of the proposed DS-DKSVD
-
+![image](./Images/Figure_3.png)  
+*Figure 3. The subnetwork details of the proposed DS-DKSVD.*
 
 ## Recommended Environment  
 We recommend the following environment for running the code:  
