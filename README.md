@@ -72,24 +72,23 @@ Dataset structure:
 ```
 Make sure the data is correctly organized before proceeding to training or evaluation.
 
-## Training and Test
-### Non-blind denoising
-To train the non-blind denoising model, run: 
-   ```bash  
-   python Denoising/non_blind/train_non.py
-   ```
-### blind denoising
-To train the blind denoising model, run: 
+## Training and Testing
+
+We provide scripts for both image denoising (non-blind and blind) and classification tasks.
+
+### Image Denoising
+- **Non-blind denoising (training):**
+  ```bash
+  python Denoising/non_blind/train_non.py
+- **blind denoising (training):**
    ```bash  
    python Denoising/blind/train_synthetic or train_real.py
    ```
-### denoising test
-To test model, run: 
+- **Testing (PSNR/SSIM evaluation):**
    ```bash  
    python Denoising/load_model_psnr_ssim_ours.py
    ```
 ### Classification
-To train the classification model, run: 
    ```bash  
    python Classification/train_class.py
    ```
