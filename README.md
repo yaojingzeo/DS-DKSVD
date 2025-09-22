@@ -1,12 +1,12 @@
 # DPRF
-The code of "Dual-Pyramid Framework for Robust Infrared-Visible Image Registration and Fusion via Convolutional Dictionary Learning" from _The Visual Computer_.
+The code of "标题" from _The Visual Computer_.
 
 ## Overall framework
-![image](./Imgs/workflow.jpg)
+![image](./Imgs/fig2.jpg)
 The workflow of the proposed **Dual-Pyramid Infrared-Visible Image Registration and Fusion Framework (DPRF)**. This framework is designed for robust cross-modal image registration and multi-scale image fusion.
 
 ## Registration Network
-![image](./Imgs/reg.jpg)
+![image](./Imgs/fig3.jpg)
 The architecture of the proposed **Gaussian-Dictionary Dual Encoding Residual Flow Registration (GDFR)** Network. For clarity, only a 3-level pyramid structure is shown here. The network utilizes Gaussian-Dictionary dual domain learning-based feature extraction and residual flow estimation for accurate infrared-visible image registration.
 
 ## Fusion Network
@@ -27,31 +27,37 @@ Follow the steps below to set up the environment and run the code:
 1. **Clone the Repository**  
    ```bash  
    git clone https://github.com/yaojingzeo/DS-DKSVD.git
-   cd DPRF  
+   cd DS-DKSVD  
 2. **Install Dependencies**
    ```bash  
    pip install -r requirements.txt  
    
 ## Datasets
-In this work, we used the following publicly available datasets for infrared-visible image registration and fusion:
-* RoadScene (https://github.com/hanna-xu/RoadScene)
-* MSRS (https://github.com/Linfeng-Tang/MSRS)
-* M3FD (https://github.com/JinyuanLiu-CV/TarDAL)
+In this study, we employ the following publicly available datasets to conduct both non-blind and blind image denoising, as well as image classification：
+* BSD
+* Set12 
+* Urban100 
+* FMD
 
 ## Dataset Preparation
 After downloading, organize the datasets as follows:
 Dataset structure:  
 ```
-├── data/  
-   ├── RoadScene/  
-       ├── ir/    # Infrared images  
-       ├── vi/    # Visible images  
-   ├── MSRS/  
-       ├── ir/    # Infrared images  
-       ├── vi/    # Visible images  
-   ├── M3FD/  
-       ├── ir/    # Infrared images  
-       ├── vi/    # Visible images  
+├── Classification/  
+   ├── dataset/  
+       ├── test/    
+       ├── train/    
+       ├── val/
+├── Denoising/  
+   ├── blind/  # Both synthetic blind and non-blind denoising are performed on the same dataset. 
+       ├── real_dateset/
+         ├── Confocal_FISH/        
+         ├── Confocal_MICE/
+         ├── TwoPhoton_MICE/        
+   ├── nonblind/  
+       ├── gray/    
+       ├── test_set12/   
+       ├── Urban100/
 ```
 Make sure the data is correctly organized before proceeding to training or evaluation.
 
