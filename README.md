@@ -2,11 +2,11 @@
 The code of "标题" from _The Visual Computer_.
 
 ## Overall framework
-![image](./Images/Figure_2.pdf)
+![image](./Images/Figure_2.png)
 The workflow of the proposed **Dual-Pyramid Infrared-Visible Image Registration and Fusion Framework (DPRF)**. This framework is designed for robust cross-modal image registration and multi-scale image fusion.
 
 ## Registration Network
-![image](./Images/Figure_3.pdf)
+![image](./Images/Figure_3.png)
 The architecture of the proposed **Gaussian-Dictionary Dual Encoding Residual Flow Registration (GDFR)** Network. For clarity, only a 3-level pyramid structure is shown here. The network utilizes Gaussian-Dictionary dual domain learning-based feature extraction and residual flow estimation for accurate infrared-visible image registration.
 
 ## Fusion Network
