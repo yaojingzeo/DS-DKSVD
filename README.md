@@ -62,9 +62,10 @@ Dataset structure:
 Make sure the data is correctly organized before proceeding to training or evaluation.
 
 ## Training
-To train the DPRF model with the default parameters already configured, simply run the following command:  
+### Non-blind denoising
+To train the non-blind denoising model, run: 
    ```bash  
-   python Trainer/Trainer.py
+   python Denoising/non_blind/train_non.py
    ```
 
 ## Evaluation
