@@ -29,7 +29,8 @@ Follow the steps below to set up the environment and run the code:
    ```bash  
    pip install -r requirements.txt  
    
-## denoising Datasets
+## Datasets
+
 In this study, we utilize the following publicly available datasets for non-blind and blind image denoising, as well as image classification:
 
 - **BSD (Berkeley Segmentation Dataset)**  
@@ -43,6 +44,12 @@ In this study, we utilize the following publicly available datasets for non-blin
 
 - **FMD (Flickr Material Database)**  
   [Download Link](https://sourl.cn/Wyqrui)
+
+- **Br35H (Brain Tumor Detection Dataset)**  
+  [Kaggle Dataset](https://www.kaggle.com/ahmedhamada0/brain-tumor-detection)
+
+👉 *BSD, Set12, and Urban100 are used for image denoising tasks, while FMD and Br35H are used for image classification.*
+
 ## Dataset Preparation
 After downloading, organize the datasets as follows:
 Dataset structure:  
