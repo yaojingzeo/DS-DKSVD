@@ -99,8 +99,8 @@ We provide scripts for both image denoising (non-blind and blind) and classifica
 If you find this work useful in your research, please consider citing our paper:
 ```
 @article{wu2025dual,  
-  title={Dual-Pyramid Framework for Robust Infrared-Visible Image Registration and Fusion via Convolutional Dictionary Learning},  
-  author={Wu, Chaojie and Li, Zheng},  
+  title={DS-DKSVD: Leveraging Dynamic-Static Dictionary  Learning for Deep K-SVD},  
+  author={Sun Zhonggui,Yao Jing and Zhang Can},  
   journal={The Visual Computer},  
   year={2025},  
   publisher={Springer},  
@@ -108,8 +108,8 @@ If you find this work useful in your research, please consider citing our paper:
 ```
 
 ## Acknowledgment  
-We acknowledge and appreciate the contributions of the open-source community, whose valuable work has greatly inspired and supported our research. In particular, some parts of our code are inspired by and adapted from the DCDicL_denoising (https://github.com/natezhenghy/DCDicL_denoising)
+We acknowledge and appreciate the contributions of the open-source community, whose valuable work has greatly inspired and supported our research. In particular, some parts of our code are inspired by and adapted from the Deep K-SVD (https://github.com/meyerscetbon/Deep-K-SVD)
 
 ## Contact
-If you have any questions about our work or code, please email `2023223040094@stu.scu.edu.cn` .
+If you have any questions about our work or code, please email `jingelle@hotmail.com` .
 
