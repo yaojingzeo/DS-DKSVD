@@ -15,14 +15,10 @@ The architecture of the proposed **Laplacian Pyramid and Dictionary Learning-bas
 
 ## Recommended Environment  
 We recommend the following environment for running the code:  
-- **Python** 3.8  
-- **PyTorch** 1.7.0  
-- **torchvision** 0.8.2  
-- **NumPy** 1.24.4  
-- **Kornia** 0.5.11  
-- **OpenCV-Python** 4.10.0.84  
-- **scikit-learn** 1.3.2
-- **scipy** 1.10.1
+- **Python** 3.8.17
+- **PyTorch** 1.12.0 
+- **torchvision** 0.13.2  
+
 ---
 
 ## Installation  
@@ -30,7 +26,7 @@ Follow the steps below to set up the environment and run the code:
 
 1. **Clone the Repository**  
    ```bash  
-   git clone https://github.com/fdaijdfina/DPRF.git  
+   git clone https://github.com/yaojingzeo/DS-DKSVD.git
    cd DPRF  
 2. **Install Dependencies**
    ```bash  
