@@ -1,5 +1,5 @@
 # DS-DKSVD
-The code of **"DS-DKSVD: Leveraging Dynamic-Static Dictionary  Learning for Deep K-SVD"** from _The Visual Computer_.
+The code of **"Dynamic-Static Hybrid Dictionary Learning: Enhancing Deep K-SVD for Image Denoising and Beyond"** from _The Visual Computer_.
 
 ![image](./Images/Figure_2.png)  
 * The overall architecture of DS-DKSVD.*
